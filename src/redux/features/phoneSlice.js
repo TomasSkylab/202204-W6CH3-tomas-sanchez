@@ -1,12 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const phoneSlices = createSlice({
+const phoneSlice = createSlice({
   name: "phone",
   initialState: {
     telephoneNumber: [],
     callState: false,
   },
-  reducers: {},
+  reducers: {
+    addDigit: (phoneState, action) => ({
+      ...phoneState,
+      telephoneNumber: [...phoneState.telephoneNumber, action.payload],
+    }),
+  },
 });
 
-export default phoneSlices;
+export default phoneSlice.reducer;
