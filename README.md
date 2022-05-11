@@ -1,3 +1,12 @@
-# Testing teléfono
+## Capa de datos
 
-Aquí tienes la aplicación del teléfono funcionando. Testéala y consigue como mínimo un 80% de coverage de statements.
+- Estado de la llamada
+- Numero de telefono
+
+## Modificaciones
+
+- Añadir digitos
+- Remover el ultimo digito
+- Reiniciar todos los digitos
+- Cambiar el estado a llamando
+- Cambiar el estado a colgando
